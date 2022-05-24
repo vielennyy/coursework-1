@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Історія України</title>
+	<link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    
+        <div id=start-card class="card">
+            <h2 id=title>Тренажер із підготовки до ЗНО з історії України</h2>
+            <hr class="solid">
+            <p>Намагайтесь відповісти враховуючи часові обмеження. Майте на увазі, що неправильні відповіді скоротять ваш час!<br></p>
+            <div id="category-buttons">
+                <button id="architecture-button" class="category-button">Архітектура</button>
+                <button id="art-button" class="category-button">Образотворче мистецтво</button>
+                <button id="personalities-button" class="category-button">Персоналії</button>
+                <button id="data-button" class="category-button">Дати</button>
+            </div>
+        </div>
+
+        <div hidden id=question-card class="card">
+            <header>
+                <time>Time: <span id="time"></span></time>
+            </header>
+
+            <div  id=question-img class="image">
+                <h5>%numcurr%/%numall%</h5>
+                <img src="%image%" height="200px"></img>
+            </div>
+
+            <div id=quiz-options>
+                <button id=option0 class="button option-button"></button>
+                <button id=option1 class="button option-button"></button>
+                <button id=option2 class="button option-button"></button>
+                <button id=option3 class="button option-button"></button>
+            </div>
+
+            <div id=result-div>
+                <hr>
+                <p id=result-text></p>
+            </div>
+            
+        </div>
+
+        <div hidden id=result-card class="card">
+
+			<h2 class="title">%title%</h2>
+			<h3 class="summary">%message%</h3>
+			<p class="result">%result%</p>
+            <button class="quiz-try again-button" id="again">Спробувати знову</button>
+		</div>
+
+	<script src="./script.js"></script>
+</body>
+</html>
